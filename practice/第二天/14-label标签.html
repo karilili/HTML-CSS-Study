@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 作用：网页中，某个标签的说明文本 -->
+    <!-- 经验：用label标签绑定文字和表单控件的关系，增大表单控件的点击范围 -->
+
+    <!-- label标签-增大点击范围 -->
+    <!-- ------------- -->
+    <!-- 写法一 -->
+    <!-- label标签只包裹内容，不包裹表单控件 -->
+    <!-- 设置label标签的for属性值与表单控件的id属性值相同 -->
+    <!-- ------------- -->
+    <!-- 写法二 -->
+    <!-- 使用label标签包裹文字与表单控件，不需要属性 -->
+    <!-- ------------- -->
+    <!-- 文本框、密码框、上传文件、单选框、多选框、下拉菜单、文本域 也都支持label标签增大点击范围 -->
+
+    <input type="radio" name="gender" id="man"> <label for="man">男</label>
+    <label><input type="radio" name="gender">女</label>
+
+</body>
+
+</html>

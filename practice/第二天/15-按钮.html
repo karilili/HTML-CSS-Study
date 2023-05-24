@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 按钮也有一个type属性，type不同，功能不同 -->
+    <!-- submit，提交按钮，点击把数据提交到后台，默认功能 -->
+    <!-- reset，重置按钮，点击后将表单控件恢复默认值 -->
+    <!-- button,普通功能，默认没有功能，一般配合JavaScript使用 -->
+
+    <!-- form 表单区域 -->
+    <!-- action是发送数据的地址，现在没有后台，暂时不用 -->
+    <form>
+        用户名：<input type="text">
+        <br><br>
+        密码：<input type="password">
+        <br><br>
+    
+        <!-- 如果省type属性，功能是 提交 -->
+        <button type="submit">提交</button>
+        <!-- 把所有表单交给form管理，才能一键清空，form管理表单后，也可以让数据统一发送到后台 -->
+        <button type="reset">重置</button>
+        <button type="button">普通按钮</button>
+    </form>
+</body>
+</html>

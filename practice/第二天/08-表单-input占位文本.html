@@ -8,16 +8,25 @@
 </head>
 <body>
     <!-- 特点： 输入什么就显示什么   单行文本-->
+    <!-- 占位符是没有任何输入时，输入框中的浅色文字。有输入时，浅色文字会消失，清空输入框后则重新出现 -->
     文本框：<input type="text" placeholder="请输入用户名"> 
     <br><br>
     <!-- 特点： 输入什么都是以 点 的形式显示   单行文本-->
     密码框：<input type="password" placeholder="请输入密码">
     <br><br>
     单选框：<input type="radio">
+    <!-- name可用于划分组别，其值可以自定义，但最好见名知意 -->
+    <!-- checked没有赋值，说明其默认值就是checked -->
+    <input type="radio" name="gender"> 男
+    <input type="radio" name="gender" checked> 女
+
     <br><br>
-    多选框：<input type="checkbox">
+    多选框0：<input type="checkbox" checked>
     <br><br>
-    上传文件：<input type="file">
+    多选框1：<input type="checkbox" checked>
+    <br><br>
+    <!-- multifile属性可以多选文件 -->
+    上传文件：<input type="file" multiple>
 
 </body>
 </html>
